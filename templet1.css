@@ -1,0 +1,342 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   /* scroll-behavior: smooth; */
+   /* scale: 0 ;    */
+
+
+
+}
+
+
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    background:url(pexels-maria-sanchez-3909922.jpg);
+    background-size: cover;
+
+
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2.5em;
+    color: whitesmoke;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5em;
+    text-transform: uppercase;
+
+}
+
+.navbar ul li::after{
+    content:"";
+    height: 3px;
+    width: 0;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li :hover{
+    width: 100%;
+    color:burlywood;
+}
+
+
+.text{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+
+
+.text h1{
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    font-weight: bold;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+
+.text p{
+    /* color: rgb(18, 15, 194); */
+    font-weight: 100;
+    
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+     border-radius: 25px;
+     font-weight: bold;
+    border: 2px solid rgb(0, 174, 255);
+    background: transparent;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    /* width: 100%; */
+    background-color:royalblue ;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+h2{
+    color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.card-lists{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 5px 10px 40px 7px (rgba(rgb(0rgb(0, 0, 0)0), green, rgb(0, 0, 0), alpha));
+    transition: 0.5s;
+}
+
+.card-img{
+    width: inherit;
+    height: inherit;
+
+    margin: 10px;
+
+
+}
+
+.card-img img{
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+
+}
+
+.card-title{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+
+    /* margin-top: -80px; */
+
+
+    z-index: -1;
+
+    transform: scale(1.1);
+    transition: 0.5s;
+} 
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+.topic{
+    background-color: #ffffff;
+
+}
+
+.topic h2{
+    color: burlywood;
+    font-size: 4em;
+    font-weight: 800;
+    text-transform: uppercase ;
+    
+}
+
+.topic p{
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 25px;
+    /* padding-top: 8px; */
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    border: 3px solid sandybrown;
+}
+
+.topic p span{
+    color: rgb(194, 132, 17);
+}
+
+.about{
+    background-color: #000000;
+    padding: 10px;
+    margin-top: 50px;
+
+
+}
+
+.about h3{
+    color: white;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.about h3 span{
+    color: blue;
+}
+
+.icon{
+    color: white;
+
+}
+
+.icon a{
+    /* color: white; */
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1023px){
+   
+
+    header{
+        padding: 25px 45px;
+        margin: 0 auto ;
+        /* scroll-behavior: auto; */
+        /* background: fixed; */
+        /* background: url(Dunes\ And\ Pyramid\ IPhone\ Wallpaper\ HD\ -\ IPhone\ Wallpapers.jpg); */
+    }
+
+    .navbar{
+        font-size: 1.3em;
+        padding-right: 25px;
+    }
+
+    .text h1{
+        font-size: 5em;
+    }
+
+    .text p{
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .logo{
+        font-size: 3em;
+    }
+
+    button{
+        font-size: 2em;
+        width: 50%;
+        margin-bottom: 10px;
+        /* padding-bottom: 10px; */
+
+    }
+    .card{
+        font-size: 10em;
+        width:100%;
+        height:100%;
+
+    }
+
+    .card-title{
+        font-size: 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 5em;
+        font-weight: 800 ;
+    }
+}
+
+
+
+
+
+
+@media(max-width:641px){
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:300px){
+
+
+
+
+
+}
+
